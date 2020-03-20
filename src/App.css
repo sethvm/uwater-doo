@@ -1,0 +1,39 @@
+.container {
+    padding: 10px;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.list {
+    margin-bottom: 12px;
+}
+
+.input_field {
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 7.5px;
+}
+
+.button {
+    width: auto;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.blue:hover {
+    color: #ffffff;
+    background-color: #0069c0;
+}
+
+.red:hover {
+    color: #ffffff;
+    background-color: #ac1900;
+}

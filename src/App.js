@@ -47,14 +47,22 @@ function App() {
     }
 
     return (
-        <>
-            <div><strong>UWater-doo</strong></div>
-            <TodoList tasks={todos} toggleTask={toggleTask}/>               
-            <input ref={taskNameRef} type='text' onKeyPress={enterPressed} />
-            <button onClick={addTask}>Add Task</button>
-            <button onClick={handleClearTasks}>Remove Complete</button>
+        <div className='container'>
+            <>
+            <div className='title'><strong>uWater-doo</strong></div>
+            <div className='list'>
+                <TodoList tasks={todos} toggleTask={toggleTask}/>
+            </div>               
+            <input className='input_field' ref={taskNameRef} type='text' onKeyPress={enterPressed} />
+            <button className='button blue' onClick={addTask}>
+                Add Task
+            </button>
+            <button className='button red' onClick={handleClearTasks}>
+                Remove Selected
+            </button>
             <div><strong>{todos.filter(todo => !todo.complete).length}</strong> tasks left to do</div>
-        </>
+            </>
+        </div>
     );
 }
 
